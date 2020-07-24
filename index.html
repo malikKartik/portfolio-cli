@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Malik cli-portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="asset/img/dp.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+<div class="app">
+    <div class="profile">
+        <div class="pic-card">
+            <div class="dp">
+                <img src="asset/img/dp.png" alt="dp">
+                <h5>Kartik Malik <br> <span style="font-size: 1rem;">Full stack engineer</span></h5>
+            </div>
+            
+        </div>
+    </div>
+    <div class="cli-container">
+        <div class="cli">
+            <div class="cli-nav">
+                <div class="btns">
+                    <div class="icon-btn close"></div>
+                    <div class="icon-btn min"></div>
+                    <div class="icon-btn max"></div>
+                    <h5>Guest@kartik: ~</h5>
+                </div>
+            </div>
+            <div class="cli-body">
+                <p>Welcome to Kartik's portfolio CLI version. Type <span style="color: #d7566a;">help</span> for list of supported commands</p>
+                <div id="cli-history">
+
+                </div>
+                <div style="display: inline-flex;height: 0.9rem;" id="userPath">
+                    <p style="width: fit-content;margin: 0;" class="userpath">Malik:~ Guest$</p>
+                    <input type="text" id="terminalInput" style="margin-left: 5px;">
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
