@@ -1,4 +1,4 @@
-import {getContact,getAbout,getHelp,getExperiences,getSkills,getSex} from './methods.js'
+import {getContact,getAbout,getHelp,getExperiences,getSkills,getGender} from './methods.js'
 
 const COMMANDS = new Map()
 COMMANDS.set("contact",getContact)
@@ -7,7 +7,7 @@ COMMANDS.set("help",getHelp)
 COMMANDS.set("experience",getExperiences)
 COMMANDS.set("skills", getSkills)
 COMMANDS.set("exp",getExperiences)
-COMMANDS.set("sex",getSex)
+COMMANDS.set("gender",getGender)
 
 function terminalInputHandler(e){
     if(e.keyCode == 13){

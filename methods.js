@@ -27,7 +27,7 @@ export const getAbout = () =>{
     img.src = "./asset/img/wave.png"
     img.setAttribute('height','14px')
     el.appendChild(img)
-    const about = document.createTextNode(" Hey there! Kartik is a final year UG student at VIT, Vellore. He has been working on web and related technologies for more than 2 years now and has also worked with several startups and have fundamental experience in technologies like IoT, electronics and AI. With the passion for sharing the knowledge, he is always available for some tech talks, learning, and teaching. Apart from my work desk you will probably find hitting the gym, binge watching some cirme thriller or reading a blog.")
+    const about = document.createTextNode(" Hey there! Kartik is a final year UG student at VIT, Vellore. He has been working on web and related technologies for more than 2 years now and has also worked with several startups and have the fundamental experience in technologies like IoT, electronics and AI. With the passion for sharing the knowledge, he is always available for some tech talks, learning, and teaching. Apart from my work desk you will probably find hitting the gym, binge watching some cirme thriller or reading a blog.")
     el.appendChild(about)
     return el
 }
@@ -75,7 +75,7 @@ export const getSkills = (attr) =>{
     }
 }
 
-export const getSex = () =>{
+export const getGender = () =>{
     const node = document.createElement("div")
     node.appendChild(document.createTextNode("Male"))
     return node

@@ -64,6 +64,45 @@ html,body{
     left: -4px;
 }
 
+.app .profile .profile-links{
+    position: absolute;
+    bottom: 90px;
+    height: 30px;
+    display: grid;
+    left: 50%;
+    transform: translateX(calc(-50% - 10px));
+    grid-template-columns: 30px 30px 30px 30px;
+    grid-gap: 20px;
+}
+.app .profile .profile-links .link{
+    border-radius: 15px;
+    position: relative;
+}
+.app .profile .profile-links .link img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.app .profile .resume-link{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(calc(-50% - 10px));
+}
+
+.app .profile .resume-link button{
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    border: 2px solid white;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-family: 'Lato', sans-serif;
+}
+
 .app .cli-container{
     position: relative;
     height: 100%;
