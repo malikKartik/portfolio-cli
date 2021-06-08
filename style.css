@@ -9,13 +9,9 @@ html,body{
 }
 
 .app{
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 30% 40px 70%;
-    grid-template-columns: 30% 70%;
     height: 100%;
     width: 100%;
-    grid-gap: 40px;
 }
 
 .app .profile{
@@ -103,25 +99,22 @@ html,body{
     font-family: 'Lato', sans-serif;
 }
 
-.app .cli-container{
-    position: relative;
+.cli-container{
     height: 100%;
     width: 100%;
 }
 
-.app .cli-container .cli{
+.cli-container .cli{
     position: absolute;
-    left: 0;
-    top: 20%;
-    width: 80%;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     background-color: #33333e;
     -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-.app .cli-container .cli .cli-nav{
+.cli-container .cli .cli-nav{
     position: absolute;
     top: 0;
     width: 100%;
@@ -135,14 +128,14 @@ html,body{
     color: white;
 }
 
-.app .cli-container .cli .cli-nav .btns{
+.cli-container .cli .cli-nav .btns{
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
 
 }
 
-.app .cli-container .cli .cli-nav .btns h5{
+.cli-container .cli .cli-nav .btns h5{
     margin: 0;
     position: absolute;
     top: 7px;
@@ -154,7 +147,7 @@ html,body{
     letter-spacing: 1px;
 }
 
-.app .cli-container .cli .cli-nav .icon-btn{
+.cli-container .cli .cli-nav .icon-btn{
     border-radius: 50%;
     margin-top: 7px;
     height: 15px;
@@ -163,17 +156,17 @@ html,body{
     margin-left: 10px;
 }
 
-.app .cli-container .cli .cli-nav .close{
+.cli-container .cli .cli-nav .close{
     background-color: #fa615c;
 }
-.app .cli-container .cli .cli-nav .min {
+.cli-container .cli .cli-nav .min {
     background-color: #ffbd48;
 }
-.app .cli-container .cli .cli-nav .max {
+.cli-container .cli .cli-nav .max {
     background-color: #3fc950;
 }
 
-.app .cli-container .cli .cli-body{
+.cli-container .cli .cli-body{
     position: absolute;
     margin-left: 10px;
     top: 30px;
@@ -186,25 +179,25 @@ html,body{
     overflow-y: scroll;
 }
 
-.app .cli-container .cli .cli-body::-webkit-scrollbar {
+.cli-container .cli .cli-body::-webkit-scrollbar {
     width: 0.5em;
 }
    
-/* .app .cli-container .cli .cli-body::-webkit-scrollbar-track {
+/* .cli-container .cli .cli-body::-webkit-scrollbar-track {
     
 } */
    
-.app .cli-container .cli .cli-body::-webkit-scrollbar-thumb {
+.cli-container .cli .cli-body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     border-radius: 5px;
 }
 
-.app .cli-container .cli .cli-body input{
+.cli-container .cli .cli-body input{
     background-color: transparent;
     border: none;
 }
 
-.app .cli-container .cli .cli-body input:focus{
+.cli-container .cli .cli-body input:focus{
     outline: none;
     font-family: 'Anonymous Pro', monospace;
     color: #b7c5d2;
@@ -212,14 +205,14 @@ html,body{
     caret-color: #fa615c;
 }
 
-.app .cli-container .cli .cli-body .each-past-command p{
+.cli-container .cli .cli-body .each-past-command p{
     margin-bottom: 5px;
     margin-top: 0;
 }
 .userpath{
     color: goldenrod;
 }
-.app .cli-container .cli .cli-body .each-past-command .userpath span{
+.cli-container .cli .cli-body .each-past-command .userpath span{
     color: #b7c5d2;
 }
 
@@ -246,7 +239,7 @@ html,body{
         top: 0;
         margin-top: 30px;
     }
-    .app .cli-container .cli{
+    .cli-container .cli{
         left: 50%;
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
@@ -257,7 +250,7 @@ html,body{
 }
 
 @media only screen and (max-width: 350px) {
-    .app .cli-container .cli{
+    .cli-container .cli{
         left: 50%;
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
